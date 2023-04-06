@@ -1,7 +1,6 @@
 .profile {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 100px;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -37,19 +36,19 @@
 }
 
 .stats__item {
-    width: calc(33%);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
+  width: calc(33%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
 }
 
 .label {
-    color: #9e9d9d;
+  color: #9e9d9d;
 }
 
 .quantity {
-    font-weight: 700;
+  font-weight: 700;
 }
