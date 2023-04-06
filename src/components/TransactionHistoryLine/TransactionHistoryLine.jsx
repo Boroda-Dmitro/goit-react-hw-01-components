@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistoryLine.module.css'
 
-export const TransactionHistoryLine = ({type, amount, currency}) => {
+export const TransactionHistoryLine = ({type, amount, currency, pair}) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+    <tr className={`${css.line} ${pair % 2 === 0 && css.pair}`}>
+      <td className={css.item}>{type}</td>
+      <td className={css.item}>{amount}</td>
+      <td className={css.item}>{currency}</td>
     </tr>
   );
 };
