@@ -17,14 +17,12 @@ export const TransactionHistory = ({ items }) => {
 
         <tbody>
           {items.map(item => {
-            pair += 1;
             return (
               <TransactionHistoryLine
                 key={item.id}
                 type={item.type}
                 amount={item.amount}
                 currency={item.currency}
-                pair={pair}
               />
             );
           })}

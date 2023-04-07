@@ -2,13 +2,16 @@ import PropTypes from 'prop-types';
 import { Statistic } from '../Statistics/Statistics';
 import css from './StatisticList.module.css';
 
-export const StatisticList = ({ stats, title = 'Upload stats' }) => {
+export const StatisticList = ({ stats, title }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
-
+      {title && <h2 className={css.title}>{title}</h2>}
+      {/* {title ? (
+        <h2 className={css.title}>{title}</h2>
+      ) : (
+        <h2 className={css.title}>Upload stats</h2>
+      )} */}
       <ul className={css.stat__list}>
-        {' '}
         {stats.map(statistic => {
           return (
             <Statistic
