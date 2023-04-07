@@ -3,7 +3,6 @@ import { TransactionHistoryLine } from '../TransactionHistoryLine/TransactionHis
 import css from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
-  let pair = 0;
   return (
     <section>
       <table className={css.transaction}>
