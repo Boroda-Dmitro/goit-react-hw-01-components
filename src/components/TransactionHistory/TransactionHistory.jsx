@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { TransactionHistoryLine } from '../TransactionHistoryLine/TransactionHistoryLine';
-import css from './TransactionHistori.module.css';
+import css from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
   let pair = 0;

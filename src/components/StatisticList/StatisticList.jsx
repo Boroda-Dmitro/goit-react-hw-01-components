@@ -24,6 +24,7 @@ export const StatisticList = ({ stats, title = 'Upload stats' }) => {
 };
 
 StatisticList.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -32,5 +33,3 @@ StatisticList.propTypes = {
     })
   ).isRequired,
 };
-
-
